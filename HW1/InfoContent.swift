@@ -44,11 +44,17 @@ struct AgeStack : View {
 struct TextStack : View {
     var body: some View {
         VStack(alignment: .leading, spacing: 6) {
-            Text("About")
-                .font(.system(size: 13, weight: .medium))
+            CustomText(
+                text: "About",
+                fontSize: 13,
+                fontWeight: .medium
+            )
                 .foregroundStyle(Color.appText)
-            Text("Evolution, Morpheus. Evolution! Like The Dinosaur. Look Out That Window. You've Had Your Time. The Future Is OUR World, Morpheus. The Future Is OUR Time")
-                .font(.system(size: 16, weight: .medium))
+            CustomText(
+                text: "Evolution, Morpheus. Evolution! Like The Dinosaur. Look Out That Window. You've Had Your Time. The Future Is OUR World, Morpheus. The Future Is OUR Time",
+                fontSize: 16,
+                fontWeight: .medium
+            )
         }
     }
 }
